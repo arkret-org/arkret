@@ -7,9 +7,10 @@
 
 # Arkret
 
-Arkret 是面向个人、组织与 AI Agent 的去中心化协作协议及其实现：各方可以自托管服务并跨域联邦协作，
-以 Realm / Circle / Agent Sidecar 划分访问与 MLS 端到端加密边界，同时把聊天、任务、文档、日历和通话
-统一为可由不同客户端投影的开放协作模型。
+Arkret 是面向个人、组织与 AI Agent 的开放协作协议及其实现：各方可以自托管 Account Station 并跨域协作，
+每个 Realm 由单一 current governance Station 接纳 Event、签发 RealmCommit；Realm、每个 Circle 与每个
+Agent Sidecar 各自维护独立 commit stream，不存在跨 stream 总序。协议以这些 scope 划分访问与 MLS
+端到端加密边界，同时把聊天、任务、文档、日历和通话统一为可由不同客户端投影的协作模型。
 
 - 协议站：https://arkret.org
 - 规范本体（唯一真相源）：[`arkret-spec`](https://github.com/arkret-org/arkret-spec)
