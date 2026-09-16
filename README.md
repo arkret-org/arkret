@@ -15,7 +15,7 @@ Agent Sidecar 各自维护独立 commit stream，不存在跨 stream 总序。�
 - 协议站：https://arkret.org
 - 规范本体（唯一真相源）：[`arkret-spec`](https://github.com/arkret-org/arkret-spec)
 
-> 当前处于开发阶段，尚无正式发布；协议与实现采取激进更新，不保证兼容旧数据。
+> 当前处于开发阶段，尚无正式发布。
 
 ## 仓库地图
 
