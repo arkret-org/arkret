@@ -33,10 +33,10 @@ Agent Sidecar 各自维护独立 commit stream，不存在跨 stream 总序。�
 
 | 仓库 | 角色 |
 | --- | --- |
-| [soland](https://github.com/arkret-org/soland) | 主服务器实现：事件摄入、账户聚合与同步、授权投影、密钥备份、联邦、媒体等 |
+| [coland](https://github.com/arkret-org/coland) | 主服务器实现：事件摄入、账户聚合与同步、授权投影、密钥备份、联邦、媒体等 |
 | [coauth](https://github.com/arkret-org/coauth) | 账户与认证支持：OIDC、DID 绑定、账户生命周期，面向组织部署的权限与管理 |
 | [floria](https://github.com/arkret-org/floria) | 推送网关：provider 分发、推送规则、可观测性 |
-| [teabay](https://github.com/arkret-org/teabay) | 目录服务：发现、收录与查询、反枚举、下架审计、时效性维护 |
+| [flagon](https://github.com/arkret-org/flagon) | 目录服务：发现、收录与查询、反枚举、下架审计、时效性维护 |
 
 ### 客户端与 UI
 
@@ -44,7 +44,7 @@ Agent Sidecar 各自维护独立 commit stream，不存在跨 stream 总序。�
 | --- | --- |
 | [garth](https://github.com/arkret-org/garth) | 运行时中立的共享客户端引擎（L2）：run loop、持久游标 / 去重 / 收件箱、出站队列；不含 UI 框架，以 path 依赖被 inkson 消费 |
 | [inkson](https://github.com/arkret-org/inkson) | 跨平台客户端（Dioxus，桌面 / 移动 / Web），承载用户侧 E2EE / MLS 行为 |
-| [sodmin](https://github.com/arkret-org/sodmin) | 服务器管理 UI，基于 soland / coauth API |
+| [codmin](https://github.com/arkret-org/codmin) | 服务器管理 UI，基于 coland / coauth API |
 | [chime](https://github.com/arkret-org/chime) | 通知集成层，连接 floria 与客户端 SDK |
 
 ### 集成与测试
@@ -56,7 +56,7 @@ Agent Sidecar 各自维护独立 commit stream，不存在跨 stream 总序。�
 
 ### 相关仓库
 
-- `yoface` — 共享 Dioxus 组件库（私有仓库），inkson / sodmin 以 cargo git 依赖消费。
+- `yoface` — 共享 Dioxus 组件库（私有仓库），inkson / codmin 以 cargo git 依赖消费。
 - `savfox` — 生态相关项目，位于 `savfox-ai` 组织，不属于本工作区。
 
 ## 协作规则（摘要）
